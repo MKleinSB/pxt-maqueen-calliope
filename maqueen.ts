@@ -74,7 +74,7 @@ namespace maqueen{
         if(alreadyInit==1){
             return
         }
-        initIR(DigitalPin.P3) //P16
+        initIR(23) //P16
         alreadyInit=1
     }
   
