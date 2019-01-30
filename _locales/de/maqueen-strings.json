@@ -14,6 +14,6 @@
     "maqueen.IR_callbackUser|block": "an obloq empfangen",
     "maqueen.sensor|block": "Ultraschallsensor Entfernung in|%unit",
     "maqueen.readPatrol|block": "Lies Linienfolger|%patrol",
-    "maqueen.writeLED|block": "LED|%led|LED Zustand|%ledswitch",
+    "maqueen.writeLED|block": "|%led| Zustand|%ledswitch",
     "maqueen.IR_read|block": "Lies Infrarot"
 }
