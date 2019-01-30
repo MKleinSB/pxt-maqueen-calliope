@@ -200,9 +200,9 @@ namespace maqueen{
     //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
     export function writeLED(led:LED, ledswitch:LEDswitch):void{
         if(led==LED.LEDLeft){
-            pins.digitalWritePin(DigitalPin.10, ledswitch) //P8
+            pins.digitalWritePin(10, ledswitch) //P8
         }else if(led==LED.LEDRight){
-            pins.digitalWritePin(DigitalPin.11, ledswitch) //P12
+            pins.digitalWritePin(11, ledswitch) //P12
         }else{
             return
         } 
