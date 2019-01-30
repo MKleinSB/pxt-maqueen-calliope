@@ -186,9 +186,9 @@ namespace maqueen{
     //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
     export function readPatrol(patrol:Patrol):number{
         if(patrol==Patrol.PatrolLeft){
-            return pins.digitalReadPin(DigitalPin.C7) //P13
+            return pins.digitalReadPin(20) //P13
         }else if(patrol==Patrol.PatrolRight){
-            return pins.digitalReadPin(DigitalPin.C8) //P14
+            return pins.digitalReadPin(21) //P14
         }else{
             return -1
         } 
@@ -200,9 +200,9 @@ namespace maqueen{
     //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
     export function writeLED(led:LED, ledswitch:LEDswitch):void{
         if(led==LED.LEDLeft){
-            pins.digitalWritePin(DigitalPin.C4, ledswitch) //P8
+            pins.digitalWritePin(DigitalPin.10, ledswitch) //P8
         }else if(led==LED.LEDRight){
-            pins.digitalWritePin(DigitalPin.C5, ledswitch) //P12
+            pins.digitalWritePin(DigitalPin.11, ledswitch) //P12
         }else{
             return
         } 
