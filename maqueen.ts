@@ -45,9 +45,9 @@ namespace maqueen{
     
     export enum LED{
         //% blockId="LEDLeft" block="LEDLeft"
-        LEDLeft=8,
+        LEDLeft=8, // noch nicht festgelegt
         //% blockId="LEDRight" block="LEDRight"
-        LEDRight=12
+        LEDRight=12 // noch nicht festgelegt
     }
     
     export enum LEDswitch{
@@ -74,7 +74,7 @@ namespace maqueen{
         if(alreadyInit==1){
             return
         }
-        initIR(23) //P16
+        initIR(23) //P3
         alreadyInit=1
     }
   
@@ -186,27 +186,27 @@ namespace maqueen{
     //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
     export function readPatrol(patrol:Patrol):number{
         if(patrol==Patrol.PatrolLeft){
-            return pins.digitalReadPin(20) //P13
+            return pins.digitalReadPin(9)  //C16
         }else if(patrol==Patrol.PatrolRight){
-            return pins.digitalReadPin(21) //P14
+            return pins.digitalReadPin(15) //C17
         }else{
             return -1
         } 
     }
     
-    //% weight=20
-    //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
-    //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
-    //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
-    export function writeLED(led:LED, ledswitch:LEDswitch):void{
-        if(led==LED.LEDLeft){
-            pins.digitalWritePin(10, ledswitch) //P8
-        }else if(led==LED.LEDRight){
-            pins.digitalWritePin(11, ledswitch) //P12
-        }else{
-            return
-        } 
-    }
+//    //% weight=20
+//    //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
+//    //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
+//    //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
+//    export function writeLED(led:LED, ledswitch:LEDswitch):void{
+//        if(led==LED.LEDLeft){
+//            pins.digitalWritePin(10, ledswitch) //P8
+//        }else if(led==LED.LEDRight){
+//            pins.digitalWritePin(11, ledswitch) //P12
+//        }else{
+//            return
+//        } 
+//    }
     
 
   
