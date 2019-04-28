@@ -44,9 +44,9 @@ namespace maqueen{
     
     export enum LED{
         //% blockId="LEDLeft" block="LEDLeft"
-        LEDLeft=8, // noch nicht festgelegt
+        LEDLeft=21, // C8
         //% blockId="LEDRight" block="LEDRight"
-        LEDRight=12 // noch nicht festgelegt
+        LEDRight=13 // C12
     }
     
     export enum LEDswitch{
@@ -73,7 +73,7 @@ namespace maqueen{
         if(alreadyInit==1){
             return
         }
-        initIR(23) //P3
+        initIR(9) //C16 = RX wegen Obloq
         alreadyInit=1
     }
   
@@ -185,7 +185,7 @@ namespace maqueen{
     //% patrol.fieldEditor="gridpicker" patrol.fieldOptions.columns=2 
     export function readPatrol(patrol:Patrol):number{
         if(patrol==Patrol.PatrolLeft){
-            return pins.digitalReadPin(9)  //C16
+            return pins.digitalReadPin(23)  //P3
         }else if(patrol==Patrol.PatrolRight){
             return pins.digitalReadPin(15) //C17
         }else{
