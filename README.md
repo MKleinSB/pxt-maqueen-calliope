@@ -9,11 +9,14 @@ P1 (7)  --> P1 T/SR04
 
 P2 (8)  --> P2 E/SR04
 
-C16 (9) --> P13 LineL
+P3 (23) --> P13 LineL
 
 C17 (15)--> P14 LineR
 
-P3 (23) --> P16 IR-Receiver
+C16 (9) --> P16 IR-Receiver (muss wohl RX sein wegen Obloq)
 
+C8 (21) --> P8 LED-Left
+
+C12(13) --> P12 LED-Right
 
 Der Maqueen zeigt beim Calliope Mini ein seltsames Verhalten. Damit es funktioniert muss der Mini über den Batterieanschluss mit Strom versorgt werden. Und zwar muss zuerst der Mini angeschaltet werden und dann der Maqueen. Und das jedesmal, wenn man ein neues Programm aufgespielt hat, oder der Maqueen ausgeschaltet war!
