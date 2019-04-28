@@ -193,19 +193,18 @@ namespace maqueen{
         } 
     }
     
-//    //% weight=20
-//    //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
-//    //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
-//    //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
-//    export function writeLED(led:LED, ledswitch:LEDswitch):void{
-//        if(led==LED.LEDLeft){
-//            pins.digitalWritePin(10, ledswitch) //P8
-//        }else if(led==LED.LEDRight){
-//            pins.digitalWritePin(11, ledswitch) //P12
-//        }else{
-//            return
-//        } 
-//    }
+    //% weight=20
+    //% blockId=writeLED block="led|%led|ledswitch|%ledswitch"
+    //% led.fieldEditor="gridpicker" led.fieldOptions.columns=2 
+    //% ledswitch.fieldEditor="gridpicker" ledswitch.fieldOptions.columns=2
+    export function writeLED(led:LED, ledswitch:LEDswitch):void{
+        if(led==LED.LEDLeft){
+            pins.digitalWritePin(21, ledswitch) //C8
+        }else if(led==LED.LEDRight){
+            pins.digitalWritePin(13, ledswitch) //C12
+        }else{
+            return        } 
+    }
     
 
   
