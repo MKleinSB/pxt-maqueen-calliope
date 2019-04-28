@@ -51,9 +51,9 @@ namespace maqueen{
     
     export enum LEDswitch{
         //% blockId="turnOn" block="turnOn"
-        turnOn=0x00,
+        turnOn=0x01,
         //% blockId="turnOff" block="turnOff"
-        turnOff=0x01
+        turnOff=0x00
     }
 
     //% advanced=true shim=maqueenIR::initIR
