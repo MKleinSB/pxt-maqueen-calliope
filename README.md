@@ -13,10 +13,10 @@ P3 (23) --> P13 LineL
 
 C17 (15)--> P14 LineR
 
-C16 (9) --> P16 IR-Receiver (muss wohl RX sein wegen Obloq)
+C16 (9) --> Den lass ich frei um am Grove-Port den IR-Receiver anschließen zu können. 
 
-C8 (21) --> P8 LED-Left
+C8 (21) --> P8 LED-Left        Da bau ich einen Schalter für ein
 
-C12(13) --> P12 LED-Right
+C12(13) --> P12 LED-Right      Da auch, sonst muss das Display ausgeschaltet werden.
 
 Der Maqueen zeigt beim Calliope Mini ein seltsames Verhalten. Damit es funktioniert muss der Mini über den Batterieanschluss mit Strom versorgt werden. Und zwar muss zuerst der Mini angeschaltet werden und dann der Maqueen. Und das jedesmal, wenn man ein neues Programm aufgespielt hat, oder der Maqueen ausgeschaltet war!
