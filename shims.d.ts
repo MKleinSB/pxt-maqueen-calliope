@@ -14,7 +14,7 @@ declare namespace maqueenIR {
     function onPressEvent(btn: RemoteButton, body: () => void): void;
 
     /**
-     * initialises local variablesssss
+     * initializes local variables
      */
     //% blockId=ir_init
     //% block="connect ir receiver to %pin" shim=maqueenIR::initIR
