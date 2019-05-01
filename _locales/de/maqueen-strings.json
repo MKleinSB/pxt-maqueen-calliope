@@ -11,9 +11,7 @@
     "maqueen.motorStop|block": "Stopp Motor|%motors",
     "maqueen.motorStopAll|block": "Stopp alle Motoren",
     "maqueen.MotorRun|block": "Motor|%index|Richtung|%Dir|Geschwindigkeit|%speed",
-    "maqueen.IR_callbackUser|block": "an obloq empfangen",
     "maqueen.sensor|block": "Ultraschallsensor Entfernung in|%unit",
     "maqueen.readPatrol|block": "Lies Linienfolger|%patrol",
-    "maqueen.writeLED|block": "|%led| Zustand|%ledswitch",
-    "maqueen.IR_read|block": "Lies Infrarot"
+    "maqueen.writeLED|block": "|%led| Zustand|%ledswitch"
 }
